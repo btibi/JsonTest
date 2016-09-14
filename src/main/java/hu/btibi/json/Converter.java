@@ -24,5 +24,9 @@ public class Converter {
         System.out.println(mapper.writeValueAsString(new BookmarkResponse(Arrays.<Bookmark>asList())));
 
         System.out.println(mapper.writeValueAsString(new BookmarkResponse(new Bookmark("test"))));
+
+        System.out.println(mapper.writeValueAsString(new Bookmark("test")));
+
+        System.out.println(mapper.writeValueAsString(new Bookmark("test", true, 0)));
     }
 }
